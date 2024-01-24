@@ -484,4 +484,31 @@ input[type="button"]{
          width: 100%;
          text-align: center;
      }
+    
+}
+@media(max-width:550px){
+    .company-L{
+        float: none;
+        width: 100%;
+
+    }
+    .company-r{
+        float: none;
+        width: 100%;
+
+    }
+   
+
+}
+@media(max-width:1000px){
+    .company-L{
+        float: none;
+        width: 100%;
+
+    }
+    .company-r{
+        float: none;
+        width: 100%;
+
+    }
 }
