@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     padding: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Montserrat Subrayada", sans-serif;
+    font-family: "Poppins", sans-serif;
      font-weight: 700;
   
 }
@@ -397,6 +397,34 @@ h1.line{
     display: block;
     clear: both;
 }
+input:focus{
+    padding: 3px;
+    border: 2px solid rgba(0,0,0,0.5);
+}
+.form-conatiner{
+    border: 2px solid rgb(221, 137, 11);
+    padding: 20px;
+    border-radius:  10px;
+    background-color: rgba(38, 58, 117, 0.329) ;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea,select{
+ 
+    padding: 5px;
+    width: 85%;
+
+   
+}
+input[type="button"]{
+    font-size: 25px;
+    width: 30%;
+    height: 20%;
+    background-color:brown ;
+    border: 2px solid rebeccapurple;
+}
 /* ########################## media Quries#################### */
 
 @media(max-width:500px){
@@ -413,6 +441,13 @@ h1.line{
         background-size: cover;
         background-repeat: no-repeat;
      */
+    }
+    .end-section .right1{
+        /* border: 2px solid rebeccapurple; */
+        background-color: #e63946;
+        float:right;
+        margin-right: 8rem;
+        border-radius: 3rem;
     }
    
     .navbar .nav-items, .navbar .logo{
