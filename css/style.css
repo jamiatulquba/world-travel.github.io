@@ -368,9 +368,6 @@ section .show-case2{
     background-color: #f4f4f4;
     color:black;
     margin-top:4rem ;
-    
-
-   
 }
 .company-img{
     width: 50%;
@@ -414,7 +411,7 @@ input[type="tel"],
 input[type="date"],
 textarea,select{
  
-    padding: 5px;
+    padding: 10px;
     width: 85%;
    
 }
