@@ -66,35 +66,63 @@
            <h1 class="line">Contact Us</h1>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. luptates velit.</p>
            <div class="form-conatiner">
-              <form action="">
-               
-                <label for="first-name">First-Name:</label><br>
-               <input type="text" placeholder="Please Enter First-Name" id="first-name"><br>
-               <label for="last-Name">last-Name:</label><br>
-               <input type="text" placeholder="Please Enter last-Name" id="last-Name"><br>
-               <label for="Father-Name">Father-Name:</label><br>
-               <input type="text" placeholder="Please Enter Father-Name" id="Father-Name"><br>
-               <label for="CNIC-Num">CNIC-Num:</label><br>
-               <input type="text" placeholder="Please Enter CNIC Number" id="CNIC-Name"><br>
-              
-               <label for="Email">Email:</label><br>
-               <input type="email" placeholder="Please Enter Email" id="Email"><br>
-               <label for="Phone">Phone Number</label><br>
-               <input type="tel" placeholder="Please Enter phone" id="Phone"><br><br>
-               <input type="date">
-              <p>select your Gender</p>
-              <label for="Male">Male</label> 
-             <input type="radio" name="Gander" id="Male"><br>
-              <label for="Female">Female</label> 
-              <input type="radio" name="Gander" id="Female"><br>
-              <label for="Male">Other</label> 
-              <input type="radio" name="Gander" id="Other"><br>
-              <p>Please comment below</p>
-              <textarea name="Gander" id="" cols="50" rows="15">Type here </textarea><br>
-              <input type="button" value="Sign in">
+                
+    <div class="form-conatiner">
+        <div class="text">
+           <h1>Login</h1>
+          <form action="" onsubmit="return  validationfrom()">
+            <input type="text" class="inpt1" placeholder="Enter User-Name" id="UserName"><br>
+            <p id="usererror" class="error"></p>
+            <input type="password"  class="inpt1" placeholder="Enter password" id="password"><br>
+            <p id="passerror" class="error"></p>
+            <p>forget password ?</p>
+            <button ><a href="./index.html">Login</a></button>
+            <p>Not a  memeber ?<span>Sign Us</span> </p> 
+          </form>
+       </div>
+    </div>
            </div>
         </div>
     </div> 
+             <!--##################### JS code ###########################-->
+    <script>
+        let UserName =document.getElementById("UserName");
+        let password =document.getElementById("password");
+        let flag=1;
+
+function  validationfrom(){
+    if(UserName.value==""){
+        
+     document.getElementById("usererror").innerHTML="User Name is error emptly";
+    }   
+    else if(UserName.value.length<8){
+        document.getElementById("usererror").innerHTML="please Enter min 8 character";
+    }
+
+    else{
+        document.getElementById("usererror").innerHTML="";
+
+
+    }
+    if(password.value==""){
+        
+        document.getElementById("passerror").innerHTML="your password is emptly";
+     }
+     else{
+        document.getElementById("passerror").innerHTML="";
+     }
+
+     if(flag){
+        return true;    
+     } 
+     else{
+        return false;
+     }
+      
+    
+
+}
+    </script>
     <footer class="footer">
         <div class="social-media">
             <i class="fa-brands fa-facebook fa-3x footer1"></i>
